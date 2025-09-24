@@ -7,7 +7,7 @@ public class MathApp {
         int bobSalary = 30000;
         int garySalary = 45000;
         // find highest
-        int highestSalary = Math.max(bobSalary, garySalary);
+        @SuppressWarnings("DataFlowIssue") int highestSalary = Math.max(bobSalary, garySalary);
         //print highest
         System.out.println("The highest salary is " + highestSalary );
 
@@ -15,9 +15,9 @@ public class MathApp {
         //question 2
         int carPrice = 65000;
         int truckPrice = 70000;
-        int highestCarPrice = Math.max(carPrice, truckPrice);
+        @SuppressWarnings("DataFlowIssue") int lowestCarPrice = Math.min(carPrice, truckPrice);
         //find highest
-        System.out.println("The highest price is " + highestCarPrice);
+        System.out.println("The lowest price is " + lowestCarPrice);
 
         //question 3
         double radius = 7.25;
@@ -25,7 +25,7 @@ public class MathApp {
 
         //question 4
         double sqrtNum = 5.0;
-        System.out.println("The square root is " + sqrtNum * sqrtNum);
+        System.out.println("The square root is " + Math.sqrt(sqrtNum));
 
         //question 6
         double absNum = -3.8;
