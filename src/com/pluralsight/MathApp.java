@@ -7,7 +7,8 @@ public class MathApp {
         int bobSalary = 30000;
         int garySalary = 45000;
         // find highest
-        @SuppressWarnings("DataFlowIssue") int highestSalary = Math.max(bobSalary, garySalary);
+        @SuppressWarnings("DataFlowIssue")
+        int highestSalary = Math.max(bobSalary, garySalary);
         //print highest
         System.out.println("The highest salary is " + highestSalary );
 
@@ -15,7 +16,8 @@ public class MathApp {
         //question 2
         int carPrice = 65000;
         int truckPrice = 70000;
-        @SuppressWarnings("DataFlowIssue") int lowestCarPrice = Math.min(carPrice, truckPrice);
+        @SuppressWarnings("DataFlowIssue")
+        int lowestCarPrice = Math.min(carPrice, truckPrice);
         //find highest
         System.out.println("The lowest price is " + lowestCarPrice);
 
